@@ -121,7 +121,7 @@ public class AddNewDonor extends javax.swing.JFrame {
         jTextField6.setFont(new java.awt.Font("Tinos", 1, 14)); // NOI18N
 
         jComboBox2.setFont(new java.awt.Font("Tinos", 1, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A +", "A -", "B +", "B -", "AB +", "AB -", "O +", "O -" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" }));
 
         jTextField7.setFont(new java.awt.Font("Tinos", 1, 14)); // NOI18N
 

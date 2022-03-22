@@ -8,7 +8,6 @@ public class home extends javax.swing.JFrame {
         initComponents();
     }
 
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -50,7 +49,7 @@ public class home extends javax.swing.JFrame {
         jMenuBar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donor.png"))); // NOI18N
-        jMenu1.setText("Doner");
+        jMenu1.setText("Donor");
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_DOWN_MASK));
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Add new.png"))); // NOI18N
@@ -180,41 +179,31 @@ public class home extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    
-
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
-      
-        int a=JOptionPane.showConfirmDialog(null,"Do you really ant to Close Application", "Select",JOptionPane.YES_NO_OPTION);
-        if(a==0)
-        {
+
+        int a = JOptionPane.showConfirmDialog(null, "Do you really ant to Close Application", "Select", JOptionPane.YES_NO_OPTION);
+        if (a == 0) {
             setVisible(false);
             System.exit(0);
         }
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
-    
-    // logout button code
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
 
-        int a=JOptionPane.showConfirmDialog(null,"Do you really want to logout", "Select",JOptionPane.YES_NO_OPTION);
-        if(a==0)
-        {
-            new login().setVisible(true); 
-        } 
+        int a = JOptionPane.showConfirmDialog(null, "Do you really want to logout", "Select", JOptionPane.YES_NO_OPTION);
+        if (a == 0) {
+            new login().setVisible(true);
+        }
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         new AddNewDonor().setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    
-    // ####################################################
-    // ###################################################
-    // Update Blood Donor Function
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
 
-     new updateDetailsDonor().setVisible(true);
-     
+        new updateDetailsDonor().setVisible(true);
+
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
@@ -230,16 +219,13 @@ public class home extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        new stock().setVisible(true );
+        new stock().setVisible(true);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
         new deleteDonor().setVisible(true);
     }//GEN-LAST:event_jMenuItem9ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -265,10 +251,8 @@ public class home extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new home().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new home().setVisible(true);
         });
     }
 

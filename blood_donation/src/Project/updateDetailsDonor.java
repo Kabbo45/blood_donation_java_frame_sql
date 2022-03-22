@@ -142,7 +142,7 @@ public class updateDetailsDonor extends javax.swing.JFrame {
         jTextField9.setFont(new java.awt.Font("Tinos", 1, 14)); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Monument Extended Black", 1, 24)); // NOI18N
-        jLabel1.setText("Add New Blood Donor");
+        jLabel1.setText("UPDATE BLOOD DONOR DETAILS");
 
         jLabel2.setFont(new java.awt.Font("Tinos", 1, 14)); // NOI18N
         jLabel2.setText("Donor ID:");
